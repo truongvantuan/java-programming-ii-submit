@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>tkt</groupId>
     <artifactId>Part08_15.StorageFacility</artifactId>
-    <name>Osa08_15.StorageFacility</name>
+    <name>Part08_15.StorageFacility</name>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     
