@@ -1,5 +1,8 @@
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Set;
 
 public class VehicleRegistry {
 
@@ -38,7 +41,8 @@ public class VehicleRegistry {
     }
 
     public void printOwners() {
-        for (String owner : this.licensMap.values()) {
+        final Set<String> owners = new HashSet<>(this.licensMap.values());
+        for (String owner : owners) {
             System.out.println(owner);
         }
     }
