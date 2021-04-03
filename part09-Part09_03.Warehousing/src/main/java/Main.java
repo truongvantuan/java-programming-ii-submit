@@ -1,9 +1,10 @@
 
-
 public class Main {
 
     public static void main(String[] args) {
-        // here you can write code to test your classes
+        ProductWarehouse pw = new ProductWarehouse("mustard", 15);
+        pw.addToWarehouse(10);
+        System.out.print(pw);
     }
 
 }
