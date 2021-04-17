@@ -2,7 +2,7 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
     <groupId>tkt</groupId>
-    <artifactId>Part08_07.Abbreviations</artifactId>
+    <artifactId>Part8_07.Abbreviations</artifactId>
     <name>Part08_07.Abbreviations</name>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
