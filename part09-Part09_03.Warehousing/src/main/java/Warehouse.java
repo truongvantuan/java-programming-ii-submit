@@ -1,4 +1,5 @@
 
+
 public class Warehouse {
 
     private double capacity;
@@ -23,7 +24,7 @@ public class Warehouse {
     }
 
     public double howMuchSpaceLeft() {
-        return (double) this.capacity - this.balance;
+        return this.capacity - this.balance;
     }
 
     public void addToWarehouse(double amount) {
@@ -51,7 +52,6 @@ public class Warehouse {
         return amount;
     }
 
-    @Override
     public String toString() {
         return "balance = " + this.balance + ", space left " + howMuchSpaceLeft();
     }
