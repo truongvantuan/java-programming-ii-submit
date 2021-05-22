@@ -1,8 +1,7 @@
 
+public class Student implements Comparable<Student> {
 
-public class Student {
-
-    private String name;
+    private final String name;
 
     public Student(String name) {
         this.name = name;
@@ -15,6 +14,11 @@ public class Student {
     @Override
     public String toString() {
         return name;
+    }
+
+    @Override
+    public int compareTo(Student student) {
+        return this.name.compareTo(student.getName());
     }
 
 }
