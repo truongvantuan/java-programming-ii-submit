@@ -5,6 +5,7 @@ import java.util.List;
 public class Main {
 
     public static void main(String[] args) {
+
         Hand hand1 = new Hand();
 
         hand1.add(new Card(2, Suit.DIAMOND));

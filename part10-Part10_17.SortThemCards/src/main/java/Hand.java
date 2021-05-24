@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Hand implements Comparable<Hand> {
 
-    private List<Card> hand;
+    private final List<Card> hand;
 
     public Hand() {
         this.hand = new ArrayList<>();
@@ -14,7 +14,7 @@ public class Hand implements Comparable<Hand> {
     public void add(Card card) {
         this.hand.add(card);
     }
-    
+
     public List<Card> getCards() {
         return this.hand;
     }
@@ -27,12 +27,15 @@ public class Hand implements Comparable<Hand> {
         Collections.sort(hand);
     }
 
+    public void sortBySuit() {
+        Collections.sort(this.hand, new BySuitInValueOrder());
+    }
+
     @Override
     public int compareTo(Hand o) {
         int sum1 = this.hand.stream().mapToInt(card -> card.getValue()).sum();
         int sum2 = o.hand.stream().mapToInt(card -> card.getValue()).sum();
         return sum1 - sum2;
     }
-    
-    
+
 }
